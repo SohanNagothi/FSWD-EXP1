@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2f;
+    text-align: center;
+    color: white;
+}
+
+header {
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #44475a;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #6272a4;
+}
+
+.section {
+    background: #282c34;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+    max-width: 900px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #44475a;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 22px;
+    transition: transform 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    background: #6272a4;
+}
+
+.skill img {
+    width: 90px;
+    height: 90px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.project-card {
+    width: 360px;
+    height: 220px;
+    perspective: 1000px;
+    position: relative;
+}
+
+.project-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.project-card:hover .project-inner {
+    transform: rotateY(180deg);
+}
+
+.project-front, .project-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding: 15px;
+}
+
+.project-front {
+    background: #44475a;
+    color: white;
+}
+
+.project-back {
+    background: #6272a4;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+a {
+    color: #50fa7b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #f1fa8c;
+}
